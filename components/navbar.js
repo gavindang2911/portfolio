@@ -41,6 +41,8 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
+      // maxW={1200}
+      maxW={1200}
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
