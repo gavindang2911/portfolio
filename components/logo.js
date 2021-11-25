@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
-import styled from '@emotion/styled'
+import Link from 'next/link';
+import Image from 'next/image';
+import { Text, useColorModeValue } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -17,10 +17,10 @@ const LogoBox = styled.span`
   &:hover img {
     transform: rotate(20deg);
   }
-`
+`;
 
 const Logo = () => {
-    const logoImg = `/images/logo.png`
+  const logoImg = `/images/logo.png`;
 
   return (
     <Link href="/">
@@ -38,7 +38,7 @@ const Logo = () => {
         </LogoBox>
       </a>
     </Link>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
