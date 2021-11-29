@@ -41,6 +41,7 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
+      // height="50px"
       // maxW={1200}
       // maxW={2500}
       bg={useColorModeValue('#ffffff40', '#20202380')}
@@ -50,7 +51,7 @@ const Navbar = (props) => {
     >
       <Container
         display="flex"
-        p={2}
+        p={5}
         maxW="container.md"
         wrap="wrap"
         align="center"
@@ -58,7 +59,7 @@ const Navbar = (props) => {
       >
         {' '}
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="50px" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>

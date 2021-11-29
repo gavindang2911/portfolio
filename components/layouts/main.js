@@ -4,14 +4,14 @@ import { Box, Container } from '@chakra-ui/react';
 
 const Main = ({ children, router }) => {
   return (
-    <Box as="main" pb={8}>
+    <Box as="main">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Gavin Dang - Homepage</title>
       </Head>
 
-      <Navbar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      <Navbar path={router.asPath}/>
+      <Container maxW="container.md">
         {children}
       </Container>
     </Box>
