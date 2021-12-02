@@ -14,7 +14,7 @@ import Section from '../components/section';
 const Page = () => {
   return (
     // <Container >
-    <Container maxW={1000} pt={60}>
+    <Container maxW="1000"   pt={64}>
       {/* <Box
         borderRadius="lg"
         mb={10}
@@ -25,19 +25,19 @@ const Page = () => {
         Hello, I&apos;m a full-stack developer!
       </Box> */}
 
-      <Box display={{ md: 'flex' }}>
-        <Box align="center">
-          <Heading variant="page-title" size="3xl">
+      <Box display={{ md: 'flex'}} justifyContent= 'space-evenly'>
+        <Box align="center" mt={{ base: 5, md: 36}} >
+          <Heading variant="page-title" size="4xl">
             Gavin Dang
           </Heading>
-          <h3>Believer (Artist / Developer / Designer)</h3>
+          <h3>Believer / Developer / Designer</h3>
         </Box>
-        <Box flexShrink={2} mt={{ base: 4, md: 0 }} ml={4} align="center">
+        <Box flexShrink={4}  mt={{ base: 5, md: 12}} align="center">
           <Image
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="300px"
+            maxWidth="350px"
             display="inline-block"
             borderRadius="full"
             src="/images/profile-image.jpg"
