@@ -9,7 +9,7 @@ const Works = () => (
       Works
     </Heading>
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
-      <Section>
+      <Section delay={0.3}>
         <WorkGridItem id="todo list" title="Todo App" thumbnail={thumbInkdrop}>
           CRUD Todo App allows user create doto
         </WorkGridItem>
