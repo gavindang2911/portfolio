@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import { GridItemStyle } from '../projectBox/grid-item'
+import { GridItemStyle } from '../projects/grid-item'
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -20,7 +20,7 @@ const Layout = ({ children, title }) => (
     <>
       {title && (
         <Head>
-          <title>{title} - Takuya Matsuyama</title>
+          <title>{title} - Gavin Dang</title>
           <meta name="twitter:title" content={title} />
           <meta property="og:title" content={title} />
         </Head>
