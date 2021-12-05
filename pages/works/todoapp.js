@@ -5,7 +5,6 @@ import {
   WorkImage,
   Meta,
 } from '../../components/projects/projectDetails';
-// import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article';
 
 const Work = () => (

@@ -7,16 +7,28 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { WorkGridItem } from './grid-item';
 import thumbInkdrop from '../../public/images/todo.jpg';
 import todoApp from '../../public/images/todo.jpg';
+import blogApp from '../../public/images/blogapp.jpg';
 
 const Projects = () => {
   return (
     <Container maxW="1000">
       <Section>
         <div className="projectDetail">
-          <Heading size="2xl" variant="section-title" >
+          <Heading size="2xl" variant="section-title">
             Projects
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
+            <Section delay={0.3}>
+              <WorkGridItem
+                id="blogapp"
+                title="Blog Application"
+                thumbnail={blogApp}
+              >
+                A full stack blog mobile application powered by Express.js on
+                the back end, Flutter on the front end, Node.js as runtime
+                environment and MongoDB as the data store
+              </WorkGridItem>
+            </Section>
             <Section delay={0.3}>
               <WorkGridItem id="todoapp" title="Todo App" thumbnail={todoApp}>
                 CRUD Todo app with React Hooks and Redux for the frontend
@@ -30,11 +42,6 @@ const Projects = () => {
                 thumbnail={thumbInkdrop}
               >
                 Keep track of issues
-              </WorkGridItem>
-            </Section>
-            <Section delay={0.3}>
-              <WorkGridItem id="todoapp" title="Todo App" thumbnail={todoApp}>
-                CRUD Todo App allows user create doto
               </WorkGridItem>
             </Section>
             <Section delay={0.3}>
