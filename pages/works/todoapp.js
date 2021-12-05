@@ -25,6 +25,12 @@ const Work = () => (
           </Link>
         </ListItem>
         <ListItem>
+          <Meta>Source Code </Meta>
+          <Link href="https://github.com/gavindang2911/TodoApp">
+            https://www.github <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
           <Meta>Platform</Meta>
           <span>Web</span>
         </ListItem>
@@ -35,6 +41,7 @@ const Work = () => (
       </List>
 
       <WorkImage src="/images/todoapp.png" alt="Todo" />
+
     </Container>
   </Layout>
 );

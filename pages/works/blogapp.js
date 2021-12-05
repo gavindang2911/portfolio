@@ -43,7 +43,6 @@ const Work = () => (
         </ListItem>
       </List>
 
-      {/* <WorkImage src="/images/BlogApp/blogapp1.jpg" alt="BlogApp" /> */}
       <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
         <Section delay={0.3}>
           <WorkImage src="/images/BlogApp/blogapp1.jpg" alt="BlogApp" />
