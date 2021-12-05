@@ -2,6 +2,7 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import SmallTitleText from '../nameTitle/smallTitleText'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
@@ -33,7 +34,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           />
           <LinkOverlay href={`/works/${id}`}>
             <Text mt={2} fontSize={20}>
-              {title}
+              <SmallTitleText text={title} lower="true"/>
             </Text>
           </LinkOverlay>
           <Text fontSize={14}>{children}</Text>

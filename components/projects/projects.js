@@ -9,6 +9,7 @@ import TodoCard from './projectCards/todoCard';
 import IssueTracker from './projectCards/issueTrackerCard';
 import FadeInWhenVisible from '../fadeIn';
 import LectureLeverager from './projectCards/lectureLeveragerCard';
+import SmallTitleText from '../nameTitle/smallTitleText';
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
         <div className="projectDetail">
           <FadeInWhenVisible>
             <Heading size="2xl" variant="section-title">
-              Projects
+              <SmallTitleText text="Projects" />
             </Heading>
           </FadeInWhenVisible>
           <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>

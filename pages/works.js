@@ -10,8 +10,8 @@ import LectureLeverager from '../components/projects/projectCards/lectureLeverag
 
 const Works = () => (
   <Layout title="Works">
-    <Container pt={64}>
-      <Heading as="h3" fontSize={20} mb={4}>
+    <Container pt={40}>
+      <Heading as="h3" fontSize={20}>
         Works
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>

@@ -7,6 +7,7 @@ import About from '../components/about/about';
 import Projects from '../components/projects/projects';
 import Avatar from '../components/avatar/avatar';
 import NameTitle from '../components/nameTitle/nameTitle';
+import SocialMedia from '../components/socialMedia/socialMedia';
 
 const Page = () => {
   return (
@@ -25,6 +26,7 @@ const Page = () => {
         <NameTitle />
         <About />
         <Projects />
+        <SocialMedia />
       </Container>
     </Layout>
   );

@@ -2,6 +2,7 @@ import { Box, Heading } from '@chakra-ui/layout'
 import React from 'react'
 import Avatar from '../avatar/avatar'
 import Section from '../section'
+import SmallTitleText from './smallTitleText'
 
 function NameTitle() {
     return (
@@ -16,7 +17,7 @@ function NameTitle() {
               <Heading variant="page-title" size="4xl">
                 Gavin Dang
               </Heading>
-              <h3>Believer / Developer / Designer</h3>
+              <SmallTitleText text="Believer / Developer / Designer"></SmallTitleText>
             </Box>
             <Avatar />
           </Box>

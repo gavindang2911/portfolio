@@ -5,13 +5,15 @@ import Section from '../section';
 import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import FadeInWhenVisible from '../fadeIn';
+import SmallTitleText from '../nameTitle/smallTitleText';
 
 const About = () => {
   return (
     <FadeInWhenVisible>
       <Section delay={0.2}>
         <Heading size="2xl" variant="section-title" pl={70}>
-          About
+        <SmallTitleText text="About" />
+
         </Heading>
         <p className="aboutDetail">
           Lorem Ipsum is simply dummy text of the printing and typesetting
