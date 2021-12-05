@@ -13,12 +13,9 @@ const Works = () => (
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem
-            id="todoapp"
-            title="Todo App"
-            thumbnail={todoApp}
-          >
-            CRUD Todo App allows user create doto
+          <WorkGridItem id="todoapp" title="Todo App" thumbnail={todoApp}>
+            CRUD Todo app with React Hooks and Redux for the frontend
+            localStorage for data storage
           </WorkGridItem>
         </Section>
         <Section>
@@ -31,20 +28,12 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem
-            id="todoapp"
-            title="Todo App"
-            thumbnail={todoApp}
-          >
+          <WorkGridItem id="todoapp" title="Todo App" thumbnail={todoApp}>
             CRUD Todo App allows user create doto
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem
-            id="todoapp"
-            title="Todo App"
-            thumbnail={todoApp}
-          >
+          <WorkGridItem id="todoapp" title="Todo App" thumbnail={todoApp}>
             CRUD Todo App allows user create doto
           </WorkGridItem>
         </Section>

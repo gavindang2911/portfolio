@@ -5,3 +5,15 @@ h3 {
     text-transform: uppercase;
 
 }
+
+.aboutDetail {
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.projectDetail {
+    padding-left: 53px;
+    padding-right: 50px;
+    padding-top: 50px;
+}

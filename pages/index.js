@@ -9,22 +9,12 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import Layout from '../components/layouts/article';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+
 import Section from '../components/section';
 import FadeInWhenVisible from '../components/fadeIn';
+import About from '../components/about/about';
+import Projects from '../components/projects/projects';
 
-function Carrd() {
-  return (
-    <div
-      style={{
-        padding: 40,
-        background: 'white',
-        display: 'inline-block',
-        borderRadius: 5,
-      }}
-    />
-  );
-}
 
 const Page = () => {
   return (
@@ -40,11 +30,11 @@ const Page = () => {
       >
         Hello, I&apos;m a full-stack developer!
       </Box> */}
-        <Section delay={0.2}>
+        <Section delay={0.2} >
           <Box
             display={{ md: 'flex' }}
             justifyContent="space-evenly"
-            h="100vh"
+            h="80vh"
             pt={40}
           >
             <Box align="center" mt={{ base: 5, md: 36 }}>
@@ -69,36 +59,10 @@ const Page = () => {
         </Section>
 
         <FadeInWhenVisible>
-          <Section delay={0.2}>
-            <Heading size="2xl" variant="section-title" pl={70}>
-              Work
-            </Heading>
-            <p
-              style={{
-                paddingLeft: '70px',
-                paddingRight: '50px',
-                paddingTop: '50px',
-              }}
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.{' '}
-            </p>
-            <Box align="center" my={4}>
-              <NextLink href="/works">
-                <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                  My portfolio
-                </Button>
-              </NextLink>
-            </Box>
-          </Section>
+          <About />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <Projects />
         </FadeInWhenVisible>
       </Container>
     </Layout>
