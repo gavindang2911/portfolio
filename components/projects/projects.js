@@ -10,6 +10,7 @@ import BlogAppCard from './projectCards/blogAppCard';
 import TodoCard from './projectCards/todoCard';
 import IssueTracker from './projectCards/issueTrackerCard';
 import FadeInWhenVisible from '../fadeIn';
+import LectureLeverager from './projectCards/lectureLeveragerCard';
 
 const Projects = () => {
   return (
@@ -22,15 +23,11 @@ const Projects = () => {
             </Heading>
           </FadeInWhenVisible>
           <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
-            <FadeInWhenVisible>
               <BlogAppCard />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
+              <LectureLeverager />
               <TodoCard />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
               <IssueTracker />
-            </FadeInWhenVisible>
+
           </SimpleGrid>
           <Box align="center" my={4}>
             <NextLink href="/works">

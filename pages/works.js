@@ -6,6 +6,7 @@ import Layout from '../components/layouts/article';
 import BlogAppCard from '../components/projects/projectCards/blogAppCard';
 import TodoCard from '../components/projects/projectCards/todoCard';
 import IssueTracker from '../components/projects/projectCards/issueTrackerCard';
+import LectureLeverager from '../components/projects/projectCards/lectureLeveragerCard';
 
 const Works = () => (
   <Layout title="Works">
@@ -17,6 +18,7 @@ const Works = () => (
         <BlogAppCard />
         <TodoCard />
         <IssueTracker />
+        <LectureLeverager />
       </SimpleGrid>
     </Container>
   </Layout>
