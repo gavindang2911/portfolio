@@ -11,10 +11,8 @@ import NextLink from 'next/link';
 import Layout from '../components/layouts/article';
 
 import Section from '../components/section';
-import FadeInWhenVisible from '../components/fadeIn';
 import About from '../components/about/about';
 import Projects from '../components/projects/projects';
-
 
 const Page = () => {
   return (
@@ -30,7 +28,7 @@ const Page = () => {
       >
         Hello, I&apos;m a full-stack developer!
       </Box> */}
-        <Section delay={0.2} >
+        <Section delay={0.2}>
           <Box
             display={{ md: 'flex' }}
             justifyContent="space-evenly"
@@ -57,13 +55,8 @@ const Page = () => {
             </Box>
           </Box>
         </Section>
-
-        <FadeInWhenVisible>
-          <About />
-        </FadeInWhenVisible>
-        <FadeInWhenVisible>
-          <Projects />
-        </FadeInWhenVisible>
+        <About />
+        <Projects />
       </Container>
     </Layout>
   );
