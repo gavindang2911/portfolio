@@ -4,8 +4,6 @@ import React from 'react';
 import Section from '../section';
 import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { WorkGridItem } from './grid-item';
-import thumbInkdrop from '../../public/images/todo.jpg';
 import BlogAppCard from './projectCards/blogAppCard';
 import TodoCard from './projectCards/todoCard';
 import IssueTracker from './projectCards/issueTrackerCard';
@@ -23,16 +21,15 @@ const Projects = () => {
             </Heading>
           </FadeInWhenVisible>
           <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
-              <BlogAppCard />
-              <LectureLeverager />
-              <TodoCard />
-              <IssueTracker />
-
+            <BlogAppCard />
+            <LectureLeverager />
+            <TodoCard />
+            <IssueTracker />
           </SimpleGrid>
-          <Box align="center" my={4}>
+          <Box align="center" my={10}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                View full projects
+                See More
               </Button>
             </NextLink>
           </Box>
