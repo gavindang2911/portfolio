@@ -10,6 +10,7 @@ h3 {
     padding-left: 70px;
     padding-right: 50px;
     padding-top: 50px;
+    font-size: 17px;
 }
 
 .projectDetail {
@@ -17,3 +18,9 @@ h3 {
     padding-right: 50px;
     padding-top: 50px;
 }
+
+br {
+    content: " ";
+    display: block;
+    margin: 20px;
+  }
