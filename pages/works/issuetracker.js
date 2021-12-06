@@ -13,7 +13,6 @@ import {
   Meta,
 } from '../../components/projects/projectDetails';
 import Layout from '../../components/layouts/article';
-import Section from '../../components/section';
 
 const Work = () => (
   <Layout title="Blog App">

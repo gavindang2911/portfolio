@@ -1,9 +1,7 @@
-import { Button } from '@chakra-ui/button';
-import { Box, Heading } from '@chakra-ui/layout';
+import { Heading } from '@chakra-ui/layout';
 import React from 'react';
 import Section from '../section';
-import NextLink from 'next/link';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+
 import FadeInWhenVisible from '../fadeIn';
 import SmallTitleText from '../nameTitle/smallTitleText';
 

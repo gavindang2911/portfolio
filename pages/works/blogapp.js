@@ -43,17 +43,17 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
-        <Section delay={0.3}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
           <WorkImage src="/images/BlogApp/blogapp1.jpg" alt="BlogApp" />
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <WorkImage src="/images/BlogApp/blogapp2.jpg" alt="BlogApp" />
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <WorkImage src="/images/BlogApp/blogapp3.jpg" alt="BlogApp" />
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <WorkImage src="/images/BlogApp/blogapp4.jpg" alt="BlogApp" />
         </Section>
       </SimpleGrid>

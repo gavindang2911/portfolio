@@ -1,28 +1,8 @@
 import React from 'react';
 import Section from '../section';
-import NextLink from 'next/link';
-import {
-  Link,
-  Heading,
-  Box,
-  SimpleGrid,
-  Button,
-  List,
-  ListItem,
-  Container,
-  Icon,
-} from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
 
-// import Section from '../components/section'
-import GridItem from '../projects/grid-item';
-import {
-  IoLogoTwitter,
-  IoLogoLinkedin,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoDiscord,
-} from 'react-icons/io5';
+import { Heading, List, Container } from '@chakra-ui/react';
+import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
 import SocialMediaLink from './socialMediaLink';
 import FadeInWhenVisible from '../fadeIn';
 import SmallTitleText from '../nameTitle/smallTitleText';

@@ -60,26 +60,26 @@ const Work = () => (
         src="/images/LectureLeverager/lectureleverager.png"
         alt="LectureLeverager"
       />
-      <SimpleGrid columns={[1, 1, 2]} gap={6} delay={0.2}>
-        <Section delay={0.3}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6} >
+        <Section>
           <WorkImage
             src="/images/LectureLeverager/mobile.png"
             alt="LectureLeverager"
           />
         </Section>
-        <Section delay={0.3}>
+        <Section >
           <WorkImage
             src="/images/LectureLeverager/mobile2.png"
             alt="LectureLeverager"
           />
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <WorkImage
             src="/images/LectureLeverager/mobile3.png"
             alt="LectureLeverager"
           />
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <WorkImage
             src="/images/LectureLeverager/mobile4.png"
             alt="LectureLeverager"

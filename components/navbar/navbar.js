@@ -15,19 +15,19 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import ThemeToggleButton from '../theme-toggle-button'
+import ThemeToggleButton from '../theme-toggle-button';
+import { IoLogoGithub } from 'react-icons/io5';
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
-  const colorChange = useColorModeValue('orange', 'greenyellow');
+  const colorChange = useColorModeValue('#104c91', 'greenyellow');
   return (
     <NextLink href={href}>
-      <Link
-        p={2}
-        color={active ? colorChange : inactiveColor}
-      >
-        <div style={{fontWeight: "bold", letterSpacing: '1px'}}>{children}</div>
+      <Link p={2} color={active ? colorChange : inactiveColor}>
+        <div style={{ fontWeight: 'bold', letterSpacing: '1px' }}>
+          {children}
+        </div>
       </Link>
     </NextLink>
   );
@@ -41,9 +41,6 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      // height="50px"
-      // maxW={1200}
-      // maxW={2500}
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
@@ -77,17 +74,7 @@ const Navbar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          ></LinkItem>
         </Stack>
-
         <Box flex={1} align="right">
           <ThemeToggleButton />
 
@@ -109,11 +96,8 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
+                <MenuItem as={Link} href="https://github.com/gavindang2911">
+                  <IoLogoGithub />
                 </MenuItem>
               </MenuList>
             </Menu>
