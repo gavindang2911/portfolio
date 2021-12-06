@@ -13,7 +13,7 @@ const IssueTracker = () => {
           title="Issue Tracker"
           thumbnail={issueTracker}
         >
-          A basic full stack "issue tracker" application powered by Express.js
+          A basic full stack Issue Tracker application powered by Express.js
           on the back end, React on the front end, Node.js as runtime
           environment and MongoDB as the data store.
         </WorkGridItem>

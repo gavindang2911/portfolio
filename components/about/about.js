@@ -17,7 +17,7 @@ const About = () => {
           in Vancouver, BC, Canada.
           <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
           <br />
-          I am pursuing a Bachelor's degree in Computing Science at Simon Fraser
+          I am pursuing a Bachelor&apos;s degree in Computing Science at Simon Fraser
           University. My primary focus and inspiration for my studies are Web
           and Mobile Development.
           <br />

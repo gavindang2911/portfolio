@@ -1,11 +1,7 @@
-import { Container, Box, Heading } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Container } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
-
-import Section from '../components/section';
 import About from '../components/about/about';
 import Projects from '../components/projects/projects';
-import Avatar from '../components/avatar/avatar';
 import NameTitle from '../components/nameTitle/nameTitle';
 import SocialMedia from '../components/socialMedia/socialMedia';
 
