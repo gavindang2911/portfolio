@@ -20,18 +20,19 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const logoImg = `/images/logo.png`;
+  const logoImg = `/logo/logo${useColorModeValue('-dark', '')}.png`;
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={logoImg} width={20} height={20} alt="logo" />
+          <Image src={logoImg} width={30} height={30} align="center" alt="logo"/>
+          <div style={{paddingRight:"8px"}}></div>
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
+            style={{paddingTop:"5px"}}
           >
             Gavin
           </Text>
