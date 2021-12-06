@@ -17,7 +17,7 @@ function NameTitle() {
               <Heading variant="page-title" size="4xl">
                 Gavin Dang
               </Heading>
-              <SmallTitleText text="Believer / Developer / Designer"></SmallTitleText>
+              <SmallTitleText text="Software Developer / Designer"></SmallTitleText>
             </Box>
             <Avatar />
           </Box>
